@@ -7,17 +7,17 @@ class Node:
 def preOrderTraversal(node):
     if node is None:
         return
+    print(node.data, end=", ")
     preOrderTraversal(node.left)
     preOrderTraversal(node.right)
-    print(node.data, end=", ")
 
 root = Node('10')
-node1 = Node('30')
-node2 = Node('25')
-node3 = Node('40')
-node4 = Node('8')
+node1 = Node('25')
+node2 = Node('30')
+node3 = Node('7')
+node4 = Node('28')
 node5 = Node('15')
-node6 = Node('12')
+node6 = Node('32')
 node7 = Node('18')
 
 root.left = node1
